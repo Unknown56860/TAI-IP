@@ -1,0 +1,58 @@
+<!DOCtype html>
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <table class="search">
+                <tr>
+                    <td>
+                        <input type="text" id="search_bar" value="London" placeholder="City name">
+                    </td>
+                    <td>
+                        <button onclick="weather()" id="search_btn">
+                            <img src="res/img/search.svg" alt="Go!" id="search_icon">
+                        </button>
+                    </td>
+                </tr>
+            </table>
+            <p id="city">City</p>
+            <img src="res/img/weather/yellow_sun_and_blue_cloud.svg" alt="weather-image" id="weather_icon">
+            <P id="temp">--°c</P>
+            <p id="weather_cndn">Weather Condition</p>
+            <table class="bottom">
+                <tr>
+                    <td>
+                        <img src="res/img/humidity-svgrepo-com.svg" alt="humidity" id="humidity_icon">
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p id="h_value">--%</p>
+                            </li>
+                            <li>
+                                <p class="category">Humidity</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="res/img/wind_speed-svgrepo-com.svg" alt="wind-speed" id="wind_icon">
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p id="ws_value">--.-- km/h</p>
+                            </li>
+                            <li>
+                                <p class="category">Wind Speed</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
